@@ -1,0 +1,54 @@
+折腾环境中搜到的零碎点，记下也许后面来查
+
+pip install --upgrade chainer
+pip install --upgrade chainerrl
+
+
+sudo yum install xorg-x11-server-Xvfb
+
+xvfb-run /usr/bin/python3.6
+
+/home/ec2-user/.gradle/caches/minecraft/net/minecraft/natives/1.11.2/liblwjgl64.so: libXcursor.so.1: cannot open shared object file: No such file or directory
+
+EOFError: This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril.
+
+execstack -c
+
+/home/ec2-user/.gradle/caches/minecraft/net/minecraft/natives/1.11.2/liblwjgl.so
+EOFError: This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril.
+
+/usr/local/lib/python3.6/dist-packages/minerl/env
+
+"$JAVACMD" "${JVM_OPTS[@]}" -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"
+
+java -Dorg.gradle.appname=gradlew -classpath /usr/local/lib/python3.6/dist-packages/minerl/env/Malmo/Minecraft/gradle/wrapper/gradle-wrapper.jar org.gradle.wrapper.GradleWrapperMain run-client
+
+Found and added coremod: com.microsoft.Malmo.OverclockingPlugin
+12:26:53.771 [QUIET] [system.out] [12:26:53] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, /home/ec2-user/.gradle/caches/minecraft/assets, --assetIndex, 1.11, --accessToken{REDACTED}, --version, 1.11.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+
+sudo yum install libXcursor
+sudo yum install libXrandr
+
+In order to run minerl environments WITHOUT A HEAD use a software renderer such as 'xvfb':
+                xvfb-run python3 <your_script.py>
+        ! NOTE: xvfb conflicts with NVIDIA-drivers!
+        ! To run headless MineRL on a system with NVIDIA-drivers, please start a
+        ! vnc server of your choosing and then `export DISPLAY=:<insert ur vnc server #>
+
+export DISPLAY=:2
+
+                 DISPLAY=:0 python3 <your_script.py>
+
+cd baselines/general/chainerrl/baselines/
+
+/etc/sysconfig/vncservers
+
+ sudo yum install turbojpeg
+
+ sudo yum install VirtualGL
+
+
+
+sudo yum install -y libjpeg-devel libX11-devel xorg-x11-proto-devel libXdamage-devel libXfixes-devel libXrandr-devel zlib-devel openssl-devel avahi-devel kernel-headers 
+
+x11vnc -rfbauth ~/.vnc/passwd  -display :0 -forever  -repeat -nowf -create -ncache 10
